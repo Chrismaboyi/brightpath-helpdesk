@@ -33,3 +33,12 @@ The supplied open-book/sun logo establishes the palette and path illustration. L
 ## AI assistance
 
 OpenAI Codex assisted with design, implementation, documentation and tests. No UI kit or starter template was used. Playwright, axe-core and Prettier were development tools. DM Sans and Lexend are self-hosted with their font licenses.
+
+## Published version
+
+- Public source: https://github.com/Chrismaboyi/brightpath-helpdesk
+- Live app: https://brightpath-learn-helpdesk.netlify.app
+- Production deploy: 6af5ad10cab009c9731fc6eb
+- Published through the GitHub and Netlify CLIs. Future Netlify updates use `netlify deploy --prod`.
+- Source and static output were scanned for the supplied provider key and the deployment token; neither was present. Netlify confirms the provider key is a production secret and does not return its readable value.
+- Supported question, unknown question and simulated 503 passed on the deployed endpoint; see deployed-test-results.json.

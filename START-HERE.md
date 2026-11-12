@@ -8,6 +8,6 @@ The hosted app uses Gemini 3.8 Flash. The key is stored in Netlify's secret envi
 
 **Run locally:** `npm run dev`, then open http://localhost:8888. Without your own local key, it runs in labelled demo mode.
 
-**Deploy updates:** `netlify deploy --prod --context production` from this folder. This project uses CLI deployments; a GitHub push alone does not publish a new Netlify version.
+**Deploy updates:** `netlify deploy --prod` from this folder. This project uses CLI deployments; a GitHub push alone does not publish a new Netlify version.
 
 **For the application:** `docs/SUBMISSION.md` has the written walkthrough and submission links. Enter your own honest total time. Real-model smoke tests are in `docs/live-test-results.json`; mock results, browser checks and screenshots are also in `docs/`.

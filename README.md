@@ -4,9 +4,9 @@ A small, source-grounded help desk for the fictional learning platform in the pr
 
 [Open the live help desk](https://brightpath-learn-helpdesk.netlify.app) · [Source code](https://github.com/Chrismaboyi/brightpath-helpdesk)
 
-The hosted app uses **Gemini 3.8 Flash**, with the key stored in a Netlify secret environment variable. A supported question and an unknown question have been checked against the real model; the third test deliberately simulates a failure. See [`docs/live-test-results.json`](docs/live-test-results.json). Local setup works without a key in a clearly labelled demo mode.
+The hosted app uses **Gemini 3.8 Flash**, with the key stored in a Netlify secret environment variable. A supported question and an unknown question have been checked against the real model; the third test deliberately simulates a failure. The same three checks also passed on the deployed site; see [`docs/deployed-test-results.json`](docs/deployed-test-results.json). Local setup works without a key in a clearly labelled demo mode.
 
-![BrightPath help desk](docs/screenshots/desktop.png)
+![BrightPath help desk](docs/screenshots/deployed-desktop.png)
 
 ## Run locally
 
@@ -49,7 +49,7 @@ npm run build
 4. To enable the real model, add **`GEMINI_API_KEY`** as a secret Netlify environment variable for the **production** context, including the Functions scope. On this account, Netlify uses its supported default secret scopes (Builds, Functions and Runtime); the app reads the key only in the server-side Function. Optionally set **`GEMINI_MODEL`** to an available `generateContent`-compatible model. The default is `gemini-3.8-flash`; availability depends on your Google AI account. Redeploy after changing environment variables.
 5. Open the site. The badge switches to **Live model** when the server has a configured key. This indicates configuration, not a successful provider call. Use **Review tools → Run all three checks** to verify actual responses, then download the results.
 
-For a full manual deployment with an installed Netlify CLI, run `netlify deploy --prod --context production` from the project root and follow its project prompts. Deploy the project, not just `dist`, when you need the Function.
+For a full manual deployment with an installed Netlify CLI, run `netlify deploy --prod` from the project root and follow its project prompts. Deploy the project, not just `dist`, when you need the Function.
 
 Never paste a provider key into the page, source code, `netlify.toml`, or your submission. `.env` files are ignored. No credentials are included in this project.
 

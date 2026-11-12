@@ -1,0 +1,56 @@
+{
+  "testedAt": "2026-11-12T12:13:39.728Z",
+  "url": "https://brightpath-learn-helpdesk.netlify.app",
+  "model": "gemini-3.8-flash",
+  "deployId": "6af5ad10cab009c9731fc6eb",
+  "checks": [
+    {
+      "name": "Supported question",
+      "question": "How do I save my lesson progress?",
+      "expected": "answered",
+      "passed": true,
+      "httpStatus": 200,
+      "durationMs": 2595,
+      "response": {
+        "status": "answered",
+        "answer": "To save your progress, select Mark complete after finishing a lesson. Watching a video alone does not mark the lesson complete.",
+        "sources": [
+          {
+            "documentId": "doc-1",
+            "title": "Getting started",
+            "factId": "doc-1-p3",
+            "quote": "To save your progress, select Mark complete after finishing a lesson. Watching a video alone does not mark the lesson complete."
+          }
+        ],
+        "mode": "live"
+      }
+    },
+    {
+      "name": "Unknown question",
+      "question": "What is the refund policy?",
+      "expected": "unknown",
+      "passed": true,
+      "httpStatus": 200,
+      "durationMs": 2756,
+      "response": {
+        "status": "unknown",
+        "answer": "That information is not available in the supplied documents. Please contact support@brightpath.example for help.",
+        "sources": [],
+        "mode": "live"
+      }
+    },
+    {
+      "name": "API failure",
+      "question": "How do I save my lesson progress?",
+      "expected": "error",
+      "passed": true,
+      "httpStatus": 503,
+      "durationMs": 337,
+      "response": {
+        "status": "error",
+        "code": "SIMULATED_FAILURE",
+        "message": "We can’t get an answer right now. Please try again in a moment, or browse the guides."
+      }
+    }
+  ]
+}
