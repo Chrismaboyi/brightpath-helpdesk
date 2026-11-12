@@ -1,0 +1,55 @@
+{
+  "testedAt": "2026-11-12T12:06:47.086Z",
+  "model": "gemini-3.8-flash",
+  "mode": "live; failure case is deliberately simulated",
+  "results": [
+    {
+      "name": "Supported question",
+      "question": "How do I save my lesson progress?",
+      "expected": "answered",
+      "passed": true,
+      "httpStatus": 200,
+      "durationMs": 3346,
+      "response": {
+        "status": "answered",
+        "answer": "To save your progress, select Mark complete after finishing a lesson. Watching a video alone does not mark the lesson complete.",
+        "sources": [
+          {
+            "documentId": "doc-1",
+            "title": "Getting started",
+            "factId": "doc-1-p3",
+            "quote": "To save your progress, select Mark complete after finishing a lesson. Watching a video alone does not mark the lesson complete."
+          }
+        ],
+        "mode": "live"
+      }
+    },
+    {
+      "name": "Unknown question",
+      "question": "What is the refund policy?",
+      "expected": "unknown",
+      "passed": true,
+      "httpStatus": 200,
+      "durationMs": 3009,
+      "response": {
+        "status": "unknown",
+        "answer": "That information is not available in the supplied documents. Please contact support@brightpath.example for help.",
+        "sources": [],
+        "mode": "live"
+      }
+    },
+    {
+      "name": "API failure",
+      "question": "How do I save my lesson progress?",
+      "expected": "error",
+      "passed": true,
+      "httpStatus": 503,
+      "durationMs": 1,
+      "response": {
+        "status": "error",
+        "code": "SIMULATED_FAILURE",
+        "message": "We can’t get an answer right now. Please try again in a moment, or browse the guides."
+      }
+    }
+  ]
+}

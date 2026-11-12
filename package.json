@@ -1,0 +1,22 @@
+{
+  "name": "brightpath-helpdesk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A source-grounded help desk for the fictional BrightPath Learn platform.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/dev.mjs",
+    "start": "node --env-file-if-exists=.env scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:results": "node scripts/save-results.mjs",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "playwright": "^1.65.0"
+  }
+}

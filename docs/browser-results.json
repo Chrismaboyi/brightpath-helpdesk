@@ -1,0 +1,68 @@
+{
+  "testedAt": "2026-11-12T12:06:54.419Z",
+  "browser": "chrome",
+  "checks": [
+    "Page loads in explicit demo mode",
+    "Empty question cannot be submitted",
+    "Supported answer gives Mark complete instructions",
+    "Citation opens the original source with matching passage highlighted",
+    "Escape closes the source dialog",
+    "Unknown answer clearly abstains",
+    "Unknown answer has no fabricated citation",
+    "Failure is visibly labelled as a simulation",
+    "One-shot failure recovers on retry",
+    "All three reviewer checks pass",
+    "Reviewer can export test evidence",
+    "Knowledge base exposes all three original documents",
+    "Support identifies the fictional email address",
+    "New conversation resets the session",
+    "User input is rendered as text, never interpreted as HTML",
+    "No horizontal overflow at 320px",
+    "No horizontal overflow at 390px",
+    "No horizontal overflow at 768px",
+    "No horizontal overflow at 1024px",
+    "No horizontal overflow at 1440px",
+    "No horizontal overflow at 1920px",
+    "Mobile question input is visible within the first screen",
+    "Mobile can send a question and receive a source-backed answer",
+    "Static-only deployment keeps the explicitly labelled mock working",
+    "Static preview identifies browser-side demo mode",
+    "A real network failure does not silently fall back to the mock",
+    "No uncaught browser JavaScript errors"
+  ],
+  "accessibility": [
+    {
+      "name": "Desktop welcome",
+      "violations": []
+    },
+    {
+      "name": "Source document dialog",
+      "violations": []
+    },
+    {
+      "name": "Conversation with supported and unknown answers",
+      "violations": []
+    },
+    {
+      "name": "Recoverable failure",
+      "violations": []
+    },
+    {
+      "name": "Reviewer tools with actual test results",
+      "violations": []
+    },
+    {
+      "name": "Knowledge base",
+      "violations": []
+    },
+    {
+      "name": "Support dialog",
+      "violations": []
+    },
+    {
+      "name": "Mobile welcome",
+      "violations": []
+    }
+  ],
+  "errors": []
+}

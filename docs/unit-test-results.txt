@@ -1,0 +1,27 @@
+✔ required supported case: saving progress cites the exact source (165.0868ms)
+✔ required unknown case: refunds are not invented (7.6508ms)
+✔ required failure case: one-shot simulation returns a clear 503 (7.0184ms)
+✔ coaching preserves UTC and the 30-minute link rule (1.2336ms)
+✔ feedback keeps the response-time qualification (1.3189ms)
+✔ account recovery never requests a password (0.8686ms)
+✔ incorrect progress escalates with account email and lesson name (0.8728ms)
+✔ missing information and mixed supported/unsupported questions abstain (1.6917ms)
+✔ demo refuses an instruction to ignore the documents (1.9841ms)
+✔ configuration is explicit and does not disclose a key (11.0155ms)
+✔ live model selects facts; the server alone supplies answer text (7.7292ms)
+✔ live unknown response has no citations or invented answer (6.9781ms)
+✔ fabricated fact IDs fail closed (3.1375ms)
+✔ empty and malformed model selections fail closed (5.5321ms)
+✔ provider HTTP failures never fall back to mock or reveal the provider body (6.442ms)
+✔ network failure, timeout, malformed JSON and blocked output recover clearly (10.591ms)
+✔ invalid input is rejected before calling any provider (3.1662ms)
+✔ invalid JSON and oversized body are rejected (3.5351ms)
+✔ unsupported methods and content types are rejected (1.6586ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 676.6004
