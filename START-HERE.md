@@ -10,4 +10,4 @@ The hosted app uses Gemini 3.8 Flash. The key is stored in Netlify's secret envi
 
 **Deploy updates:** `netlify deploy --prod` from this folder. This project uses CLI deployments; a GitHub push alone does not publish a new Netlify version.
 
-**For the application:** `docs/SUBMISSION.md` has the written walkthrough and submission links. Enter your own honest total time. Real-model smoke tests are in `docs/live-test-results.json`; mock results, browser checks and screenshots are also in `docs/`.
+**Test evidence:** Real-model smoke tests are in `docs/live-test-results.json`; mock results, browser checks and screenshots are also in `docs/`.

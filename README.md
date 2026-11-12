@@ -106,8 +106,7 @@ No sign-in, database, payments or invented platform content. The support address
 
 The first improvement would be a live-model evaluation set covering paraphrases, ambiguous questions, partial support and prompt injection. Measure abstention accuracy and passage relevance before expanding the knowledge base. The two saved live cases are a smoke test, not a broad quality evaluation. Before exposing a paid model publicly, add durable rate limiting and operational monitoring; this bounded practical-test app does not include those production controls.
 
-## AI assistance and submission
+## AI assistance
 
 This implementation was created with **OpenAI Codex assistance** for design, code, documentation and tests. It is original implementation work from the supplied brief and logo, rather than a reused template. Playwright and axe-core were used for browser checks. The hosted answer provider is Gemini. The unit tests use controlled provider fixtures, while `docs/live-test-results.json` records actual model calls.
 
-[`docs/SUBMISSION.md`](docs/SUBMISSION.md) contains an honest written walkthrough to adapt for the application. Review the implementation and replace the time/link placeholders with your own details before submitting.

@@ -12,7 +12,7 @@ Approximately **24 minutes** for the initial agent build. The subsequent UI edit
 - Question input, exact source answers, highlighted citations and all three unedited documents.
 - Explicit unknown answers, support context, one-shot simulated failure and retry.
 - Clearly labelled deterministic demo, plus a server-side Gemini fact-selection adapter.
-- Built static folder, Netlify Functions configuration, setup instructions and submission draft.
+- Built static folder, Netlify Functions configuration and setup instructions.
 
 ## Verification
 
